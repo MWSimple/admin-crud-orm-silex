@@ -1,5 +1,5 @@
 <?php
-namespace MWSimple\Controller;
+namespace MWSimple\Silex\AdminCrudSilex;
 
 use Symfony\Component\HttpFoundation\Request;
 use Controller\FormController;
