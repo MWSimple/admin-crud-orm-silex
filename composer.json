@@ -10,10 +10,10 @@
         }
     ],
     "require": {
-	"dflydev/doctrine-orm-service-provider": "1.0.*@dev"
+        "dflydev/doctrine-orm-service-provider": "1.0.*@dev"
     },
     "autoload": {
-	"psr-0": { "MWSimple\\Silex\\AdminCrudSilex": "src" }
+	    "psr-0": { "MWSimple\\Controller": "src" }
     },
     "extra": {
         "branch-alias": {
