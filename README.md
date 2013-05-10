@@ -26,6 +26,7 @@ Using [dflydev/doctrine-orm-service-provider](https://github.com/dflydev/dflydev
 ## Usage
 
 Add it to the `src/app.php` class:
+
 	use Silex\Application;
 	...
     use MWSimple\Silex\AdminCrudSilex\CrudController;
@@ -42,6 +43,7 @@ Add it to the `src/app.php` class:
 	});
 
 Add it to the `src/controllers.php` class:
+
 	//CONTROLLER POST
 	$app->get('/post', "post.controller:indexAction")->bind('post');
 	$app->post('/post/', "post.controller:createAction")->bind('post_create');
