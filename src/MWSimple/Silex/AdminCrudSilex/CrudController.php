@@ -6,9 +6,9 @@ use Controller\FormController;
 
 class CrudController
 {
-    private $app;
-    private $options;
-    private $class;
+    protected $app;
+    protected $options;
+    protected $class;
 
     public function __construct($app, $options)
     {
@@ -22,7 +22,7 @@ class CrudController
     {
         $em = $this->app["orm.em"];
 
-        $entities = $em->getRepository('Entity'.$this->options['entityRepo'])->findBy(array(),array('id' => 'DESC'));
+        $entities = $em->getRepository('Entity'.$this->options['entityRepo'])->findAll();
 
         return $this->app['twig']->render($this->options['dirTemplate'].'index.html.twig', array(
             'entities' => $entities,
