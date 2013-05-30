@@ -1,6 +1,6 @@
 {
-    "name": "mwsimple/admin-crud-silex",
-    "description": "Admin Crud Silex",
+    "name": "mwsimple/admin-crud-orm-silex",
+    "description": "Admin Crud ORM Silex",
     "keywords": ["crud", "generator", "silex", "bootstrap", "doctrine", "orm"],
     "license": "MIT",
     "authors": [
@@ -14,7 +14,7 @@
     },
     "autoload": {
 	    "psr-0": {
-            "MWSimple\\Silex\\AdminCrudSilex": "src/"
+            "MWSimple\\Silex\\AdminCrudORMSilex": "src/"
         }
     },
     "extra": {

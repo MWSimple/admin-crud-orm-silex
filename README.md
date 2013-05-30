@@ -12,12 +12,12 @@ Using [fabpot/Silex-Skeleton](https://github.com/fabpot/Silex-Skeleton)
 
     "require": {
       ...
-      "mwsimple/admin-crud-silex": "2.2.*@dev"
+      "mwsimple/admin-crud-orm-silex": "2.2.*@dev"
     }
 
 Execute:
 
-    php composer.phar update "mwsimple/admin-crud-silex"
+    php composer.phar update "mwsimple/admin-crud-orm-silex"
 
 ## Dependencies
 
@@ -29,7 +29,7 @@ Add it to the `src/app.php` class:
 
 	use Silex\Application;
 	...
-    use MWSimple\Silex\AdminCrudSilex\CrudController;
+    use MWSimple\Silex\AdminCrudORMSilex\CrudController;
     ...
     //CONTROLLER POST
 	$app['post.controller'] = $app->share(function() use ($app) {

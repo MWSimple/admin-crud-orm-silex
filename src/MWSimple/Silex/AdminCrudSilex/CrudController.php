@@ -159,7 +159,7 @@ class CrudController
         ));
     }
 
-    private function createDeleteForm($id)
+    protected function createDeleteForm($id)
     {
         return $this->app['form.factory']->createBuilder('form', array('id' => $id))
             ->add('id', 'hidden')
